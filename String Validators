@@ -1,7 +1,9 @@
 """
 Task:
-You are given a string .
-Your task is to find out if the string
+You are given a string 's'.
+Your task is to find out if the string 's'contains: alphanumeric characters, 
+alphabetical characters, digits, lowercase and uppercase characters. 
+
 """
 
 
@@ -11,14 +13,14 @@ if __name__ == '__main__':
     
     #Take input from user and store in variable "s"
     s =input()
-    #check whether string contains any alpha numeric characters in string (it would return bool)
+    #check whether string contains any alpha numeric characters in string
     print(any(i.isalnum() for i in s))
-    #check whether string contains any alphabet character (it would return bool)
+    #check whether string contains any alphabet character 
     print(any(i.isalpha() for i in s))
-    #check whether string contains any digit (it would return bool)
+    #check whether string contains any digit 
     print(any(i.isdigit() for i in s))
-    #check whether string contains any lowecase (it would return bool)
+    #check whether string contains any lowecase
     print(any(i.islower() for i in s))
-    #check whether string contains any uppercas (it would return bool)
+    #check whether string contains any uppercas
     print(any(i.isupper() for i in s))
 
