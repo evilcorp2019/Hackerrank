@@ -1,0 +1,24 @@
+"""
+Task:
+You are given a string .
+Your task is to find out if the string
+"""
+
+
+#Solution
+
+if __name__ == '__main__':
+    
+    #Take input from user and store in variable "s"
+    s =input()
+    #check whether string contains any alpha numeric characters in string (it would return bool)
+    print(any(i.isalnum() for i in s))
+    #check whether string contains any alphabet character (it would return bool)
+    print(any(i.isalpha() for i in s))
+    #check whether string contains any digit (it would return bool)
+    print(any(i.isdigit() for i in s))
+    #check whether string contains any lowecase (it would return bool)
+    print(any(i.islower() for i in s))
+    #check whether string contains any uppercas (it would return bool)
+    print(any(i.isupper() for i in s))
+
